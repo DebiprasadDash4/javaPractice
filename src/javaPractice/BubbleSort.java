@@ -1,6 +1,10 @@
 package javaPractice;
-public class BubbleSort {
 
+import java.util.Arrays;
+
+public class BubbleSort {
+	//Bubble sort
+	//Comparing the array element at n and n+1 and swaping it which is bigger.
 	public static void main(String[] args) {
 		int input[] = { 7, 3, 58, 9, 6, 7, 52 };
 
@@ -14,9 +18,12 @@ public class BubbleSort {
 			}
 		}
 		
-		for (int i = 0; i < input.length; i++) {
-			System.out.println(input[i]);
-		}
+//		for (int i = 0; i < input.length; i++) {
+//			System.out.println(input[i]);
+//		}
+		
+		System.out.println(Arrays.toString(input));
+		System.out.println("Second largest"+input[input.length-2]);
 
 	}
 
